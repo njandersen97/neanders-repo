@@ -1,0 +1,5 @@
+tacacs-server key 7 **see RED01-0101-0403-12T1**
+tacacs-server host 10.1.192.4 vrf MGMT
+tacacs-server host 10.1.192.16 vrf MGMT
+no tacacs-server host 10.3.0.52 vrf MGMT
+no tacacs-server host 10.13.2.50 vrf MGMT
