@@ -1,0 +1,19 @@
+#START----Copy everything between this line and the STOP below. Paste into the Azure Cloud Shell. Change the username and password if you like--------------------------
+$location = 'westus2'
+$user = "admin"
+$password = convertto-securestring 'password' -asplaintext -force
+$credential = new-object System.Management.Automation.PSCredential ($user, $password);
+$domainname = "GNS3-Server"
+new-azresourcegroup -name GNS3-rg -location $location
+New-AzureRmNetworkSecurityGroup -Name GNS3-nsg -ResourceGroupName GNS3-rg -Location $location
+$nsg=Get-AzureRmNetworkSecurityGroup -Name GNS3-nsg -ResourceGroupName GNS3-rg
+$nsg | Add-AzureRmNetworkSecurityRuleConfig -Name Allow_All_the_things -Description "Let it all through" -Access Allow -Protocol * -Direction Inbound -Priority 100 -SourceAddressPrefix * -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange * | Set-AzureRmNetworkSecurityGroup
+
+new-azvm -resourcegroup GNS3-rg -location $location -name 'GNS3-SERVER' -image UbuntuLTS -size 'Standard_D4s_v3' -securitygroupname GNS3-nsg -credential $credential -DomainNameLabel $domainname
+
+#STOP ------------------------------------------------------------------------------------------------------------------
+
+#START -- Copy the code below and paste into your GNS3 server----------------------------------------------------------
+cd /tmp
+curl https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-install.sh > gns3-remote-install.sh
+sudo bash gns3-remote-install.sh --with-iou --with-i386-repository
