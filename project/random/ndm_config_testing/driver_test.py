@@ -14,8 +14,10 @@ DeviceStatic
 | where NgsDeviceType !contains 'epms'
 | where HardwareSku !contains "digi"
 | where NgsDeviceType !contains 'Optical'
+| where Vender in ('Cisco', 'Arista')
+| where OSVersion !contains "Sonic"
 | project DeviceName
-| take 100
+| take 10
 '''
 swan_query = '''
 DeviceStatic
@@ -39,23 +41,30 @@ def execute_query(cluster: str, db: str, query: str):
     except Exception:
         print("Exception in running Kusto Query, please run again")
 
+def test_auth_config(device):
+    try:
+        handler = net_devices2.get_device_handler(device)
+        latest_passwords = handler.get_latest_passwords(use_dsms=True)
+        ndm_config = handler.get_configlet("Authentication").lines
+        auth_config = handler._get_local_auth_config_from_ndm(ndm_config, latest_passwords)
+        print('Device: ',device,'| Config: ',auth_config)
+    except Exception as e:
+        print('Device: ',device,' hit an exception: ',e)
+
 
 def main():
     print('Running Kusto query for standard device list')
     device_list = execute_query(cluster, db, query)
     print('Running Kusto query for swan device list')
     swan_device_list = execute_query(cluster, db, swan_query)
-    print('Grabbing secrets for standard device list')
+    print('Grabbing configs for standard device list')
     for device in device_list:
-        handler = net_devices2.get_device_handler(device)
-        dsms_secret = handler.get_latest_passwords(use_dsms=True)
-        print('Device: ',device,'| Secrets: ',dsms_secret)
+        test_auth_config(device)
     print('---------------------------------------------------')
-    print('Grabbing secrets for swan device list')
-    for device in device_list:
-        handler = net_devices2.get_device_handler(device)
-        dsms_secret = handler.get_latest_passwords(use_dsms=True)
-        print('Device: ',device,'| Secrets: ',dsms_secret)
+    print('Grabbing configs for swan device list')
+    for device in swan_device_list:
+        test_auth_config(device)
+
 
 
 if __name__ == "__main__":

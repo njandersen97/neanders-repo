@@ -1,0 +1,45 @@
+Commands for /hardwareproxy-prod/adhocsecrets/factorydefault/senetas/internalcafilepw
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/factorydefault/senetas/internalcafilepw -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_factorydefault_senetas_internalcafilepw.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/factorydefault/senetas/internalcafilepw -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_factorydefault_senetas_internalcafilepw.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
+Commands for /hardwareproxy-prod/adhocsecrets/factorydefault/senetas/ops
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/factorydefault/senetas/ops -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_factorydefault_senetas_ops.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/factorydefault/senetas/ops -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_factorydefault_senetas_ops.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
+Commands for /hardwareproxy-prod/adhocsecrets/tycoon/arista-7170/eapicert
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/tycoon/arista-7170/eapicert -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_tycoon_arista-7170_eapicert.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/tycoon/arista-7170/eapicert -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_tycoon_arista-7170_eapicert.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
+Commands for /hardwareproxy-prod/adhocsecrets/tycoon/arista-7170/eapikey
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/tycoon/arista-7170/eapikey -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_tycoon_arista-7170_eapikey.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/tycoon/arista-7170/eapikey -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_tycoon_arista-7170_eapikey.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
+Commands for /hardwareproxy-prod/adhocsecrets/factorydefault/labtest/pulseconnectsecure/admin
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/factorydefault/labtest/pulseconnectsecure/admin -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_factorydefault_labtest_pulseconnectsecure_admin.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/factorydefault/labtest/pulseconnectsecure/admin -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_factorydefault_labtest_pulseconnectsecure_admin.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
+Commands for /hardwareproxy-prod/adhocsecrets/storageaccount/connectionstring/remoteconfig/fallback
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/storageaccount/connectionstring/remoteconfig/fallback -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_storageaccount_connectionstring_remoteconfig_fallback.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/storageaccount/connectionstring/remoteconfig/fallback -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_storageaccount_connectionstring_remoteconfig_fallback.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
+Commands for /hardwareproxy-prod/adhocsecrets/storageaccount/connectionstring/remoteconfig/primary
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/storageaccount/connectionstring/remoteconfig/primary -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_storageaccount_connectionstring_remoteconfig_primary.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/storageaccount/connectionstring/remoteconfig/primary -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_storageaccount_connectionstring_remoteconfig_primary.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
+Commands for /hardwareproxy-prod/adhocsecrets/azure/factorydefault/pulseconnectsecure/admin
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/azure/factorydefault/pulseconnectsecure/admin -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_azure_factorydefault_pulseconnectsecure_admin.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/azure/factorydefault/pulseconnectsecure/admin -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_azure_factorydefault_pulseconnectsecure_admin.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
+Commands for /hardwareproxy-prod/adhocsecrets/factorydefault/pulseconnectsecure/pulseadminhwproxy
+DSMSClient GetSecret -url:https://global-dsms.dsms.core.windows.net -name:/hardwareproxy-prod/adhocsecrets/factorydefault/pulseconnectsecure/pulseadminhwproxy -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_factorydefault_pulseconnectsecure_pulseadminhwproxy.txt
+Dsmsclient -url:https://global-dsms.dsms.core.windows.net  -name:/hardwareproxy-prod/adhocsecrets/factorydefault/pulseconnectsecure/pulseadminhwproxy -file:/Users/NEANDERS/"Work Folders"/Desktop/DsmsClient/DsmsClient/January2023/_hardwareproxy-prod_adhocsecrets_factorydefault_pulseconnectsecure_pulseadminhwproxy.txt -readasbytes:true -retainfileaftercreation:true Rollover
+
+
